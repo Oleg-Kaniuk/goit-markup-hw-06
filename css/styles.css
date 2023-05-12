@@ -966,16 +966,33 @@ img {
   color: var(--default-accent-color);
 }
 
-/* .modal-form-checkbox .modal-form-check-icon {
+/* .modal-form-check-icon {
   opacity: 0;
 } */
 
-.modal-form-check:checked + .modal-form-check-desc .modal-form-checkbox {
+/* .modal-form-check:checked + *.modal-form-checkbox {
+  opacity: 1;
+} */
+
+/* .modal-form-check:checked + .modal-form-check-desc .modal-form-checkbox {
   background-color: var(--primary-accent-color);
 }
 
 .modal-form-check:focus + .modal-form-check-desc .modal-form-checkbox {
   background-color: var(--primary-accent-color);
+} */
+
+.modal-form-check-icon {
+  opacity: 0;
+  fill: var(--secondary-accent-color);
+}
+
+.modal-form-check:checked + * .modal-form-check-icon {
+  opacity: 1;
+}
+
+.modal-form-check:checked + * .modal-form-checkbox {
+  background-color: #404bbf;
 }
 
 .modal-button-submit {
